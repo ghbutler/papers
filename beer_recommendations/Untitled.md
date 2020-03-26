@@ -141,7 +141,7 @@ schor_dat %>%
   scale_x_continuous(breaks = seq(0, 60, 10))
 ```
 
-![](Untitled_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](https://github.com/ghbutler/papers/blob/master/beer_recommendations/unnamed-chunk-4-1.png?raw=true)<!-- -->
 
 Now let’s have a quick look at the different beers from Schorschbräu. It
 appears that there are 10 different beers from this brand in this
@@ -312,7 +312,7 @@ popular_agg %>% select(mean_aroma,
   labs(title = 'Correlation matrix for popular beers')
 ```
 
-![](Untitled_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](https://github.com/ghbutler/papers/blob/master/beer_recommendations/unnamed-chunk-9-1.png?raw=true)<!-- -->
 
 We can see from the plots of the univariate regressions below that all
 of these variables are linearly related to `mean_overall`, our dependent
@@ -348,7 +348,7 @@ ggarrange(univariate_plot('mean_taste', popular_agg),
           mean_abv_plot)
 ```
 
-![](Untitled_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](https://github.com/ghbutler/papers/blob/master/beer_recommendations/unnamed-chunk-10-1.png?raw=true)<!-- -->
 
 Now we can consider the full model. It does not appear to work in the
 way we’d expect from the plots above. In particular, it appears that
@@ -446,7 +446,7 @@ resfitted <- gg_resfitted(final_model) +
 ggarrange(reshist, resfitted)
 ```
 
-![](Untitled_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](https://github.com/ghbutler/papers/blob/master/beer_recommendations/unnamed-chunk-13-1.png?raw=true)<!-- -->
 
 ### Question 4: Lastly, if I typically enjoy a beer due to its aroma and appearance, which beer style should I try?
 
